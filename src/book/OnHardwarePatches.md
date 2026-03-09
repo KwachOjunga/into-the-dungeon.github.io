@@ -1,7 +1,8 @@
 # On Hardware Patches.
 ___
+```
                                                                             08/03/2026
-
+```
 
 Earlier this week, someone asked me about how they fix hardware vulnerabilities like spectre (the first and second variant)
 and meltdown.
@@ -34,4 +35,5 @@ In software, hardware and microcode.
 Yes, there is such a thing as microcode.
 
 
-[^1]: RTL - Register Transfer Language
+[^1]: RTL - [Register Transfer Language](https://grokipedia.com/page/Register-transfer_level)
+      <!--[TLDR](./RTL.md)-->
