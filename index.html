@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Hardware Patches</title>
+        <title>Articles</title>
 
 
         <!-- Custom HTML head -->
@@ -35,10 +35,10 @@
             const path_to_root = "";
             const default_light_theme = "ayu";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "searchindex-6abee02e.js";
+            window.path_to_searchindex_js = "searchindex-43541c40.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="toc-a1a18ac3.js"></script>
+        <script src="toc-7ab08bd1.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -177,49 +177,16 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="on-hardware-patches"><a class="header" href="#on-hardware-patches">On Hardware Patches.</a></h1>
-<hr>
-<pre><code>                                                                        08/03/2026
-</code></pre>
-<p>Earlier this week, someone asked me about how they fix hardware vulnerabilities like spectre (the first and second variant)
-and meltdown.</p>
-<p>And while i do not recall my response, i am under the impression that my answer was close to this; “Well, that can’t be fixed
-its hardware.”</p>
-<p>My then prevailing assumptions were:-</p>
-<ul>
-<li>Hardware once described in RTL is final; that is signals move from point A to B and are not bidirectional,
-hence to fix a vulnerability, you must change the RTL.<sup class="footnote-reference" id="fr-1-1"><a href="#footnote-1">1</a></sup></li>
-<li>Assembly language binary encodings are fixed and final; therefore they are the only way
-to effect a function whose output affects the observable execution environment.</li>
-</ul>
-<p>The truth, it’s slightly more involving than that black and white declaration:
-“…it can’t be fixed in software.”</p>
-<ul>
-<li>By this i mean any mitigations will have to be released in hardware updates.</li>
-</ul>
-<p>In the event of a hardware vulnerablity, where the loophole exists in
-the behavior of actual functional components made up of circuits, it is
-true that the “real” solution will have to be a physical implementation.</p>
-<p>Alternatively, certain mitigations can be offeered logically. This is where compilers and operating systems
-come in. The OS’ mitigation is to be found in policing the set of programs it is asked to execute i.e the memory locations
-it is accessing, the signals it is sending among a whole slew of other techniques i am stil unaware of.</p>
-<p>As for the compiler, it polices the types of operations it is allowed to perform on the program’s data during compilation.
-So the solutions come in three forms, all being updates/patches.
-In software, hardware and microcode.</p>
-<p>Yes, there is such a thing as microcode.</p>
-<footer id="last-change">Last change: <time datetime="2026-03-08">2026-03-08</time>, commit: <a href="https://github.com/KwachOjunga/into-the-dungeon/commit/1e6af30">1e6af30</a></footer>
-<hr>
-<ol class="footnote-definition">
-<li id="footnote-1">
-<p>RTL - Register Transfer Language <a href="#fr-1-1">↩</a></p>
-</li>
-</ol>
-
+                        <h1 id="articles"><a class="header" href="#articles">Articles</a></h1>
+<footer id="last-change">Last change: <time datetime="2026-03-09">2026-03-09</time>, commit: <a href="https://github.com/KwachOjunga/into-the-dungeon/commit/6fba660">6fba660</a></footer>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
+                            <a rel="next prefetch" href="book/OnHardwarePatches.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -228,6 +195,9 @@ In software, hardware and microcode.</p>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
+                    <a rel="next prefetch" href="book/OnHardwarePatches.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
+                    </a>
             </nav>
 
         </div>
