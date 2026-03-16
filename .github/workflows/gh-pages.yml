@@ -20,6 +20,9 @@ jobs:
             - name: Install mdbook-gitinfo preprocessor
               run: cargo install mdbook-gitinfo --locked
 
+            - name: Install mdbook-typst-math preprocessor
+              run: cargo install mdbook-typst-math --locked
+
             - name: Setup mdBook
               uses: peaceiris/actions-mdbook@v2
               with:
