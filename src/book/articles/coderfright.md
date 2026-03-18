@@ -1,4 +1,7 @@
-## Coder's fright; Battling your inner demons
+## Coder's fright 
+
+
+### Battling your inner demons
 
 You know, in all the programming lore that i have come across, none of them
 talk about how difficult it can be to approach a new codebase.
@@ -29,6 +32,8 @@ means, and if you are lucky enough you have been exposed to it through languages
 You are unaware of synchronization primitives and your working assumption is all computation that has been 
 parrallelized is in optimal working conditions.
 Threadpools to you are similar to unicorns.
+
+### Strategizing
 
 At this point the codebase is like a predator and you are its prey.
 Its primary intent is to crush your spirit and remind you of your inefficiencies.
