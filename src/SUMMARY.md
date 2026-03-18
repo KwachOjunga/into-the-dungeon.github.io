@@ -1,5 +1,5 @@
 - [Articles](./book/articles.md)
-  - [Hardware Patches](./book/articlesOnHardwarePatches.md)
+  - [Hardware Patches](./book/articles/OnHardwarePatches.md)
 
 - [Shorts](./book/shorts.md)
   - [On AI as a means](./book/shorts/guts.md)
