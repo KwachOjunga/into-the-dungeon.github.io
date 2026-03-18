@@ -1,14 +1,18 @@
+## Coder's fright; Battling your inner demons
+
 You know, in all the programming lore that i have come across, none of them
 talk about how difficult it can be to approach a new codebase.
 
 Ok, it is likely that my observation is biased by the fact that i am a beginner at this and the individuals that get to talk about stuff are experts.
 Probably there is a shift with increase in experience.
 
-My ability to be frightened by a codebase can be quantified by a function whose parameters are the relative size of the codebase and the average number of new concepts i will encounter per module.
+
+Since the space that mathematics can describe is essentially infinite, i think the ability to be frightened by a codebase can be quantified by a function 
+whose parameters are the relative size of the codebase and the average number of new concepts i will encounter per module.
 
 Of course there are other things like the language in which the codebase is written that will factor in like one's mastery of the language 
-and the degree of specificity that the lanuage allows.
-[P_NOTE] -- expound on specificity
+and the degree of specificity[^1] that the lanuage allows.
+
 So the size of the codebase will obviously determine the duration you have to spend 
 nested in the codebase to have a firm grasp of it.
 New concepts establish the neccessity to be explored especially if they are heavily 
@@ -37,7 +41,7 @@ system's scheduler.
 Now to get to understanding the scheduler you have to go a layer deeper.
 It is there that you get a proper introduction to computer organization and its architecture.
 If you pay heed to the call of adventure you get thrown into a world filled with
-ISAs. The scales fall of your eyes and now what emerges is the realisation that "the 
+ISAs. The scales fall off your eyes and now what emerges is the realisation that "the 
 world is way larger than the computer you are hunched over".
 
 If you are a grown up, you cease the pursuit and retrace your steps. You have work to do.
@@ -45,8 +49,8 @@ If you are a grown up, you cease the pursuit and retrace your steps. You have wo
 Personally that is where my kind of trouble begins because i have always found that going
 a layer deeper always yielded a better picture.
 
-Now, if you are going to understand your codebase there is getting familiar with the "literature"
-and then there is getting to understand the implications of the "literature" as applied.
+Now, if you are going to understand a codebase there is getting familiar with the "literature"
+and then there is getting to understand the implications of the "literature" as applied or implemented.
 
 Grasping the implications requires a whole roadtrip. You play out the serial execution as it occurs in the codebase
 and verify the correctness or quality of emergent logic from the order of executions.
@@ -54,7 +58,7 @@ and verify the correctness or quality of emergent logic from the order of execut
 Getting to that point alone can be immensely satisfying but now there is a kick to this kick.
 Now you want to modify the logic to enhance either perfomance or enhance usability by probably adding an extension.
 
-If you have ever traced a circuit using probes maybe you'll relate to this. Adding an extension to the codebase is similar to knowing the exact places to tap.
+If you have ever traced a circuit using probes maybe you'll relate to this. Adding an extension to the codebase is similar to knowing the exact places to tap in a closed circuit.
 It is like knowing exactly which points can i attach to and i get the exact expected output.
 
 The real kick is probably in enhancing performance. To enhance perfomance you have to breakdown the implementation detail.
@@ -72,3 +76,5 @@ There is probably a trick about maintaining socket liveness to escape the handsh
 Those who are serious enough switch to io-uring.
 
 I believe that it is in the pursuit of this kick that optimization engineers live.
+
+[^1]: Certain languages particularly low level ones allow you to have more control of how your data will be computed. This is achieved mostly using compiler intrinsics or lints like those that enforce a particular data alignment.
