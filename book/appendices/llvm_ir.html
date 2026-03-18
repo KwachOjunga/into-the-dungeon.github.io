@@ -35,7 +35,7 @@
             const path_to_root = "../../";
             const default_light_theme = "ayu";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-a17696a5.js";
+            window.path_to_searchindex_js = "../../searchindex-a19dc996.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc-341144d8.js"></script>
@@ -239,7 +239,7 @@ fn main() {
        ret void        
    }
 </code></pre>
-<p>actual rustc output</p>
+<p>Actual rustc output with the added difference of printing the output to stdout</p>
 <pre><code class="language-llvm-ir">   ; great::main
    ; Function Attrs: nonlazybind uwtable
    define hidden void @_RNvCs3TUjdV8qTsL_5great4main() unnamed_addr #1 {
@@ -301,6 +301,9 @@ fn main() {
    }
    
 </code></pre>
+<p>If you are keen you’ll notice no defined variable is re-assigned twice.
+In SSA there is no concept of shadowing. Each defined variable has to be the only instance of its initialization;
+reusing it requires the instantiation of a new variable.</p>
 <h2 id="terminator-instructions"><a class="header" href="#terminator-instructions">Terminator instructions</a></h2>
 <p>The terminator instructions are: ‘ret’, ‘br’, ‘switch’, ‘indirectbr’, ‘invoke’, ‘callbr’ ‘resume’, ‘catchswitch’, ‘catchret’, ‘cleanupret’, and ‘unreachable’.</p>
 <h3 id="ret"><a class="header" href="#ret"><code>ret</code></a></h3>
@@ -348,7 +351,7 @@ The return type must be of a first class type so basically it must be of the pri
 <p>From the langref :- “Depending on properties of the target machine and the particular switch instruction, this instruction may be code generated in different ways. For example, it could be generated as a series of chained conditional branches or with a lookup table.”</p>
 <h2 id="linkages"><a class="header" href="#linkages">Linkages</a></h2>
 <p>These appear to be information being passed to the linker.</p>
-<footer id="last-change">Last change: <time datetime="2026-03-18">2026-03-18</time>, commit: <a href="https://github.com/KwachOjunga/into-the-dungeon/commit/017cc18">017cc18</a></footer>
+<footer id="last-change">Last change: <time datetime="2026-03-18">2026-03-18</time>, commit: <a href="https://github.com/KwachOjunga/into-the-dungeon/commit/a774762">a774762</a></footer>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
