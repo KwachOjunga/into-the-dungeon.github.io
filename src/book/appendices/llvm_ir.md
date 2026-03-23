@@ -9,7 +9,19 @@ An overview of some of llvm's internals illustrating their usages and syntax.
  
  For a complete reference of the IR, lookup [LLVM_IR](https://llvm.org/docs/LangRef.html)
  
- ## Examples
+ If you have been keen on the developmenents in the compiler tech world,
+ you'll know that compiler infrastructure fundamentally boils down to MLIR.
+ And no wonder, it eliminates the need to design various code generators that 
+ necessarily need to be built for any language relying on its own custom IR.
+ 
+ I do not think it can also be overstated how much utility it avails all in 
+ a single codebase, especially the optimization passes and the verification 
+ passes.
+
+So this effort goes to explore how various high level language constructs get to be lowered to  
+the IR.
+ 
+## Examples
  
 ### SSA features 
  
