@@ -35,7 +35,7 @@
             const path_to_root = "../../";
             const default_light_theme = "ayu";
             const default_dark_theme = "ayu";
-            window.path_to_searchindex_js = "../../searchindex-48ee95f2.js";
+            window.path_to_searchindex_js = "../../searchindex-48b72125.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="../../toc-91f001b0.js"></script>
@@ -187,6 +187,14 @@
 <li>Debug Information</li>
 </ul>
 <p>For a complete reference of the IR, lookup <a href="https://llvm.org/docs/LangRef.html">LLVM_IR</a></p>
+<p>If you have been keen on the developmenents in the compiler tech world,
+you’ll know that compiler infrastructure fundamentally boils down to MLIR.
+And no wonder, it eliminates the need to design various code generators that
+necessarily need to be built for any language relying on its own custom IR.</p>
+<p>I do not think it can also be overstated how much utility it avails all in
+a single codebase, especially the optimization passes and the verification
+passes.</p>
+<p>So this effort goes to explore how various high level language constructs get to be lowered to<br>the IR.</p>
 <h2 id="examples"><a class="header" href="#examples">Examples</a></h2>
 <h3 id="ssa-features"><a class="header" href="#ssa-features">SSA features</a></h3>
 <p>This instance show cases the constrains laid out by SSA</p>
@@ -352,7 +360,7 @@ The return type must be of a first class type so basically it must be of the pri
 <p>From the langref :- “Depending on properties of the target machine and the particular switch instruction, this instruction may be code generated in different ways. For example, it could be generated as a series of chained conditional branches or with a lookup table.”</p>
 <h2 id="linkages"><a class="header" href="#linkages">Linkages</a></h2>
 <p>These appear to be information being passed to the linker.</p>
-<footer id="last-change">Last change: <time datetime="2026-03-22">2026-03-22</time>, commit: <a href="https://github.com/KwachOjunga/into-the-dungeon/commit/14e38ba">14e38ba</a></footer>
+<footer id="last-change">Last change: <time datetime="2026-03-23">2026-03-23</time>, commit: <a href="https://github.com/KwachOjunga/into-the-dungeon/commit/2553e18">2553e18</a></footer>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
