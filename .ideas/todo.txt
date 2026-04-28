@@ -6,3 +6,9 @@ Write about channels and async. <This will not go away!!!>
 
 # 23/03/2026
 Zig for the Rustacean
+
+# 28/04/2026
+Topics that remain enshrouded and are largely domain knowledge.
+    - Typesystems
+    - Async
+    - Processor Internals
